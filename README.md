@@ -3,7 +3,7 @@
 Customized `bitnami/fluentd` image with `cri` parser enabled and some other
 plugins pre-installed.
 
-Current version: `1.15.0-debian-11-r0-0`
+Current version: `1.15.0-debian-11-r0-1`
 
 ## Change from v1.15
 
