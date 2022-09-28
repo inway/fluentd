@@ -13,9 +13,10 @@ LABEL org.opencontainers.image.authors="https://bitnami.com/contact" \
 ENV HOME="/" \
     OS_ARCH="${TARGETARCH:-amd64}" \
     OS_FLAVOUR="debian-11" \
-    OS_NAME="linux" \
-    PLUGINS="fluent-plugin-parser-cri fluent-plugin-multi-format-parser "\
-            "fluent-plugin-grok-parser fluent-plugin-kubernetes-parser"
+    OS_NAME="linux"
+
+ENV PLUGINS fluent-plugin-parser-cri fluent-plugin-multi-format-parser \
+            fluent-plugin-grok-parser fluent-plugin-kubernetes-parser
 
 COPY prebuildfs /
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
