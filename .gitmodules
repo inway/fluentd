@@ -1,3 +1,6 @@
 [submodule "bitnami-docker-fluentd"]
 	path = bitnami-docker-fluentd
 	url = https://github.com/bitnami/bitnami-docker-fluentd.git
+[submodule "containers"]
+	path = containers
+	url = https://github.com/bitnami/containers.git
