@@ -15,8 +15,9 @@ ENV HOME="/" \
     OS_FLAVOUR="debian-11" \
     OS_NAME="linux"
 
-ENV PLUGINS fluent-plugin-parser-cri fluent-plugin-multi-format-parser \
-            fluent-plugin-grok-parser fluent-plugin-kubernetes-parser
+LABEL org.opencontainers.image.ref.name="1.15.2-debian-11-r14-1"
+ENV   PLUGINS fluent-plugin-parser-cri fluent-plugin-multi-format-parser \
+              fluent-plugin-grok-parser fluent-plugin-kubernetes-parser
 
 COPY prebuildfs /
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
